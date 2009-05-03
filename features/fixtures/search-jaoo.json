@@ -1,0 +1,56 @@
+{
+    "results": [
+    {
+        "text": "reading my own abstract for JAOO presentation",
+        "to_user_id": null,
+        "from_user": "drnic",
+        "id": 1666627310,
+        "from_user_id": 5075,
+        "iso_language_code": "en",
+        "source": "&lt;a href=&quot;http:\/\/iconfactory.com\/software\/twitterrific&quot;&gt;twitterrific&lt;\/a&gt;",
+        "profile_image_url": "http:\/\/s3.amazonaws.com\/twitter_production\/profile_images\/55631479\/Photo_24_normal.jpg",
+        "created_at": "Fri, 01 May 2009 04:45:42 +0000"
+    },
+    {
+        "text": "Come speak with Matt at JAOO next week",
+        "to_user_id": null,
+        "from_user": "theRMK",
+        "id": 1666334207,
+        "from_user_id": 8783115,
+        "iso_language_code": "en",
+        "source": "&lt;a href=&quot;http:\/\/83degrees.com\/to\/powertwitter&quot;&gt;Power Twitter&lt;\/a&gt;",
+        "profile_image_url": "http:\/\/s3.amazonaws.com\/twitter_production\/profile_images\/110356397\/rmk_manga2_normal.jpg",
+        "created_at": "Fri, 01 May 2009 04:01:38 +0000"
+    },
+    {
+        "text": "@VenessaP I think they went out for noodles. #jaoo",
+        "to_user_id": 102294,
+        "to_user": "VenessaP",
+        "from_user": "Steve_Hayes",
+        "id": 1666166639,
+        "from_user_id": 3169244,
+        "iso_language_code": "en",
+        "source": "&lt;a href=&quot;http:\/\/www.atebits.com\/&quot;&gt;Tweetie&lt;\/a&gt;",
+        "profile_image_url": "http:\/\/s3.amazonaws.com\/twitter_production\/profile_images\/68791310\/Steve_Hayes_Thumbnail_normal.jpg",
+        "created_at": "Fri, 01 May 2009 03:38:48 +0000"
+    },
+    {
+        "text": "Come speak with me at JAOO next week - http:\/\/jaoo.dk\/",
+        "to_user_id": null,
+        "from_user": "mattnhodges",
+        "id": 1664823944,
+        "from_user_id": 503163,
+        "iso_language_code": "en",
+        "source": "&lt;a href=&quot;http:\/\/desktop.seesmic.com\/&quot;&gt;Seesmic Desktop&lt;\/a&gt;",
+        "profile_image_url": "http:\/\/s3.amazonaws.com\/twitter_production\/profile_images\/86466627\/Picture_2_normal.png",
+        "created_at": "Fri, 01 May 2009 01:06:48 +0000"
+    }],
+    "since_id": 0,
+    "max_id": 1682666650,
+    "refresh_url": "?since_id=1682666650&q=jaoo",
+    "results_per_page": 15,
+    "next_page": "?page=2&max_id=1682666650&q=jaoo",
+    "completed_in": 0.03198,
+    "page": 1,
+    "query": "jaoo"
+}
