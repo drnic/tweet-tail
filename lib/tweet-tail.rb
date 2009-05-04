@@ -5,6 +5,9 @@ module TweetTail
   VERSION = '0.0.1'
 end
 
+gem 'json'
 require "json"
+
+require "open-uri"
 
 require "tweet-tail/tweet_poller"

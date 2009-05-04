@@ -34,9 +34,10 @@ module TweetTail
       end
 
       path = options[:path]
-
-      # do stuff
-      stdout.puts "SUCCESS!! To update this executable, look in lib/tweet-tail/cli.rb"
+      
+      app = TweetTail::TweetPoller.new(arguments.shift)
+      app.refresh
+      stdout.puts app.render_latest_results
     end
   end
 end

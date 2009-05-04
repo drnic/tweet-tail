@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 #
-#  Created on 2009-5-1.
+#  Created on 2009-5-1 by Dr Nic Williams
 #  Copyright (c) 2009. All rights reserved.
 
+require 'rubygems'
 require File.expand_path(File.dirname(__FILE__) + "/../lib/tweet-tail")
-
 require "tweet-tail/cli"
 
 TweetTail::CLI.execute(STDOUT, ARGV)

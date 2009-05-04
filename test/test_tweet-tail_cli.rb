@@ -3,12 +3,13 @@ require 'tweet-tail/cli'
 
 class TestTweetTailCli < Test::Unit::TestCase
   def setup
-    TweetTail::CLI.execute(@stdout_io = StringIO.new, [])
+    TweetTail::CLI.execute(@stdout_io = StringIO.new, ['jaoo'])
     @stdout_io.rewind
     @stdout = @stdout_io.read
   end
   
   def test_print_default_output
+    puts @stdout
     assert_match(/To update this executable/, @stdout)
   end
 end

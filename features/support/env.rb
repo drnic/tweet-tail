@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + "/../../lib/tweet-tail"
+# require File.dirname(__FILE__) + "/../../lib/tweet-tail"
 
 gem 'cucumber'
 require 'cucumber'
@@ -9,5 +9,6 @@ gem "fakeweb"
 require "fakeweb"
 
 Before do
+  FakeWeb.clean_registry
   FakeWeb.allow_net_connect = false
 end
