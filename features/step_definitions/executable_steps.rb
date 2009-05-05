@@ -13,3 +13,13 @@ When /^I run executable internally with arguments "(.*)"/ do |arguments|
   end
 end
 
+
+Then /^I should see some twitter messages$/ do
+  actual_output = File.read(@stdout)
+  # puts actual_output # UNCOMMENT this to see what the current live data looks like
+  lines = actual_output.split("\n")
+  lines.length.should_not == 0
+  lines.each do |line|
+    line.should =~ /^[\w_]+:\s.+$/
+  end
+end
