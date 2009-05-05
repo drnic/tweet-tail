@@ -4,14 +4,12 @@ Feature: Live twitter search results on command line
   I want twitter search results appearing in the console
 
   Scenario: Display some search results
-    Given a safe folder
-    And twitter has some search results for "jaoo"
+    Given twitter has some search results for "jaoo"
     When I run local executable "tweet-tail" with arguments "jaoo"
     Then I should see some twitter messages
 
   Scenario: Display explicit search results
-    Given a safe folder
-    And twitter has some search results for "jaoo"
+    Given twitter has some search results for "jaoo"
     When I run executable internally with arguments "jaoo"
     Then I should see
       """
