@@ -22,6 +22,5 @@ class TweetTail::TweetPoller
   protected
   def initial_json_data
     Net::HTTP.get(URI.parse("http://search.twitter.com/search.json?q=#{query}"))
-    # open("http://search.twitter.com/search.json?q=#{query}")
   end
 end 
