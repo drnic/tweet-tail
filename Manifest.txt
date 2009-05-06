@@ -4,6 +4,8 @@ PostInstall.txt
 README.rdoc
 Rakefile
 bin/tweet-tail
+bin/tweet_tail
+bin/tweettail
 features/cli.feature
 features/development.feature
 features/fixtures/search-jaoo-since-1682666650.json
