@@ -97,10 +97,9 @@ Then /^(does|does not) invoke generator "(.*)"$/ do |does_invoke, generator|
     actual_output.should_not(match(/dependency\s+#{generator}/))
 end
 
-Then /help options "(.*)" and "(.*)" are displayed/ do |opt1, opt2|
+Then /I should see help option "(.*)"/ do |opt|
   actual_output = File.read(@stdout)
-  actual_output.should match(/#{opt1}/)
-  actual_output.should match(/#{opt2}/)
+  actual_output.should match(/#{opt}/)
 end
 
 Then /^I should see$/ do |text|

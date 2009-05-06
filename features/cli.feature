@@ -30,3 +30,10 @@ Feature: Live twitter search results on command line
       drnic: reading my own abstract for JAOO presentation
       CaioProiete: Wish I could be at #JAOO Australia...
       """
+  
+  Scenario: Show help if no search query passed
+    When I run local executable "tweet-tail" with arguments ""
+    Then I should see help option "-f"
+  
+  
+  

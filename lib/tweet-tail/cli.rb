@@ -19,9 +19,14 @@ module TweetTail::CLI
               "Show this help message.") { stdout.puts opts; exit }
       opts.parse!(arguments)
     end
+    
+    unless query = arguments.shift
+      stdout.puts parser
+      exit
+    end
 
     begin
-      app = TweetTail::TweetPoller.new(arguments.shift)
+      app = TweetTail::TweetPoller.new(query)
       app.refresh
       stdout.puts app.render_latest_results
       while(options[:polling])
