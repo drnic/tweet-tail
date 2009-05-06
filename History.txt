@@ -1,3 +1,5 @@
+* explicit development dependencies
+
 == 1.1.0 2009-05-06
 
 * only 1 executable: tweettail

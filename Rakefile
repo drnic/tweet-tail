@@ -9,7 +9,11 @@ $hoe = Hoe.new('tweettail', TweetTail::VERSION) do |p|
   p.changes        = p.paragraphs_of("History.txt", 0..1).join("\n\n")
   p.rubyforge_name = 'drnicutilities'
   p.extra_dev_deps = [
-    ['newgem', ">= #{::Newgem::VERSION}"]
+    ['newgem', ">= #{::Newgem::VERSION}"],
+    ['fakeweb', '>= 1.2.2'],
+    ['mocha', '>= 0.9.5'],
+    ['cucumber', '>= 0.3.2'],
+    ['rspec', '>= 1.2.5']
   ]
   
   p.clean_globs |= %w[**/.DS_Store tmp *.log]
