@@ -4,10 +4,10 @@ require File.dirname(__FILE__) + '/lib/tweet-tail'
 
 # Generate all the Rake tasks
 # Run 'rake -T' to see list of generated tasks (from gem root directory)
-$hoe = Hoe.new('tweet-tail', TweetTail::VERSION) do |p|
+$hoe = Hoe.new('tweettail', TweetTail::VERSION) do |p|
   p.developer('Dr Nic', 'drnicwilliams@gmail.com')
-  p.changes              = p.paragraphs_of("History.txt", 0..1).join("\n\n")
-  p.rubyforge_name       = 'drnicutilities'
+  p.changes        = p.paragraphs_of("History.txt", 0..1).join("\n\n")
+  p.rubyforge_name = 'drnicutilities'
   p.extra_dev_deps = [
     ['newgem', ">= #{::Newgem::VERSION}"]
   ]
