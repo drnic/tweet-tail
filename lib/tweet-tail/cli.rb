@@ -32,7 +32,9 @@ module TweetTail::CLI
       while(options[:polling])
         Kernel::sleep(15)
         app.refresh
-        stdout.puts app.render_latest_results
+        if app.render_latest_results.size > 0
+          stdout.puts app.render_latest_results
+        end
       end
     rescue Interrupt
     end
