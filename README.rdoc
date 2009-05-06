@@ -4,29 +4,36 @@
 
 == DESCRIPTION:
 
-FIX (describe your package)
+Get the latest search results streaming to your console:
 
-== FEATURES/PROBLEMS:
+    $ tweet-tail railsconf
+    rubysolo: protip: it helps to actually READ the error message.  #railsconf
+    voxxit: So, everyone, how is #railsconf coming? When is the big 3.0 announcement?
+    JesseGoldberg: @GavinStark I don't have as much to chat about as you do while you are at RailsConf.
+    wndxlori: Anyone else not eaten yet #railsconf
+    zenmatt: Great dinner and coversation with @heroku at n9ne in the palms. #railsconf
+    Adkron: Damn you #railsconf why can I not visit you this year.  I'm missing all the gitjour goodness.
+    pengwynn: Meeting a lot of great folks at the open gov hackathon at #railsconf #gov20
+    davidjrice: Enjoying ordering taxis to our hotel... &quot;for the wynn!&quot; #railsconf quick noms at stripburger then whiskeys at the stage door with ey ftw!
+    cricketgeek: as pointed out by @jnewland at sushi this evening... http://pic.im/2LY  #railsconf
+    paulog: had fun at gilt groupe coctail party.  props. #railsconf
+    Amuse_Bouche: I hope my two favorite people in the world form an alliance! (Swoon) RT: @dhh Loved talking to @tferris at #railsconf. So much resonates.
+    abie: At open gov BOF #railsconf
+    matthewcarriere: running a saas bof was great... I hope it gets some more time this week. #railsconf
+    jdar: @tullytully RT @dgou:for the benefit of people at #railsconf keynote, here is penelope trunk on tim ferris: http://bit.ly/b81E
+    yorzi: Reading: &quot;Rails 3 and the Real Secret to High Productivity: RailsConf 2009 - May 04 - 07, 2009, Las Vegas,NV&quot; ( http://tinyurl.com/czmkxn )
 
-* FIX (list of features or problems)
-
-== SYNOPSIS:
-
-  FIX (code sample of usage)
-
-== REQUIREMENTS:
-
-* FIX (list of requirements)
+Or let it sit there all day with the `-f` option (as like `tail -f`)
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* sudo gem install tweet-tail
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2009 FIXME full name
+Copyright (c) 2009 Dr Nic Williams
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

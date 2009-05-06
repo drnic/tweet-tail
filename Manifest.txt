@@ -6,6 +6,7 @@ Rakefile
 bin/tweet-tail
 features/cli.feature
 features/development.feature
+features/fixtures/search-jaoo-since-1682666650.json
 features/fixtures/search-jaoo.json
 features/fixtures/search-jaoo.short.json
 features/step_definitions/common_steps.rb
@@ -16,6 +17,8 @@ features/support/common.rb
 features/support/env.rb
 features/support/logger.rb
 features/support/matchers.rb
+features/support/mocha.rb
+features/support/time_machine_helpers.rb
 lib/tweet-tail.rb
 lib/tweet-tail/cli.rb
 lib/tweet-tail/tweet_poller.rb
