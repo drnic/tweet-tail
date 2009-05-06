@@ -1,12 +1,12 @@
 = tweet-tail
 
-* http://github.com/drnic/tweet-tail
+* http://github.com/drnic/tweettail
 
 == DESCRIPTION:
 
 Get the latest search results streaming to your console:
 
-    $ tweet-tail railsconf
+    $ tweettail railsconf
     rubysolo: protip: it helps to actually READ the error message.  #railsconf
     voxxit: So, everyone, how is #railsconf coming? When is the big 3.0 announcement?
     JesseGoldberg: @GavinStark I don't have as much to chat about as you do while you are at RailsConf.
@@ -25,9 +25,7 @@ Get the latest search results streaming to your console:
 
 Or let it sit there all day with the -f option (like "tail -f"):
 
-    tweet_tail -f railsconf
-
-Can use aliases +tweettail+ and +tweet_tail+.
+    tweettail -f railsconf
 
 == INSTALL:
 

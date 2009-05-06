@@ -1,5 +1,7 @@
-== 1.0.1 2009-05-06
+== 1.1.0 2009-05-06
 
+* only 1 executable: tweettail
+* removed aliased executables: tweet-tail and tweet_tail
 * add explicit missing "require 'net/http'"
 
 == 1.0.0 2009-05-06

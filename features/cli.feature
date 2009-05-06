@@ -5,7 +5,7 @@ Feature: Live twitter search results on command line
 
   Scenario: Display some search results
     Given twitter has some search results for "jaoo"
-    When I run local executable "tweet-tail" with arguments "jaoo"
+    When I run local executable "tweettail" with arguments "jaoo"
     Then I should see some twitter messages
   
   Scenario: Display explicit search results
@@ -32,7 +32,7 @@ Feature: Live twitter search results on command line
       """
   
   Scenario: Show help if no search query passed
-    When I run local executable "tweet-tail" with arguments ""
+    When I run local executable "tweettail" with arguments ""
     Then I should see help option "-f"
   
   
