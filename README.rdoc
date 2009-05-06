@@ -25,9 +25,11 @@ Get the latest search results streaming to your console:
 
 Or let it sit there all day with the `-f` option (as like `tail -f`)
 
+Can use aliases `tweettail` and `tweet_tail`.
+
 == INSTALL:
 
-* sudo gem install tweet-tail
+* sudo gem install tweettail
 
 == LICENSE:
 
