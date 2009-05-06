@@ -1,3 +1,5 @@
+require 'net/http'
+
 class TweetTail::TweetPoller
   attr_accessor :query, :latest_results, :refresh_url
   
