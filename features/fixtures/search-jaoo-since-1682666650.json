@@ -1,0 +1,22 @@
+{
+    "results": [{
+        "text": "Wish I could be at #JAOO Australia...",
+        "to_user_id": null,
+        "from_user": "CaioProiete",
+        "id": 1711269079,
+        "from_user_id": 4936114,
+        "iso_language_code": "en",
+        "source": "&lt;a href=&quot;http:\/\/www.twhirl.org\/&quot;&gt;twhirl&lt;\/a&gt;",
+        "profile_image_url": "http:\/\/s3.amazonaws.com\/twitter_production\/profile_images\/48685982\/image_normal.jpg",
+        "created_at": "Tue, 05 May 2009 23:33:52 +0000"
+    }],
+    "since_id": 1682666650,
+    "max_id": 1711269079,
+    "refresh_url": "?since_id=1711269079&q=jaoo",
+    "results_per_page": 15,
+    "next_page": "?page=2&max_id=1711269079&q=jaoo",
+    "warning": "since_id removed for pagination.",
+    "completed_in": 0.017173,
+    "page": 1,
+    "query": "jaoo"
+}

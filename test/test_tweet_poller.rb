@@ -23,9 +23,7 @@ class TestTweetPoller < Test::Unit::TestCase
             "from_user": "mattnhodges",
             "id": 1664823944
         }],
-        "refresh_url": "?since_id=1682666650&q=jaoo",
-        "results_per_page": 15,
-        "next_page": "?page=2&max_id=1682666650&q=jaoo"
+        "refresh_url": "?since_id=1682666650&q=jaoo"
     }
     JSON
     @app.refresh
@@ -43,5 +41,28 @@ class TestTweetPoller < Test::Unit::TestCase
     drnic: reading my own abstract for JAOO presentation
     RESULTS
     assert_equal(expected, @app.render_latest_results)
+  end
+  
+  def test_ready_for_refresh
+    assert_equal('?since_id=1682666650&q=jaoo', @app.refresh_url)
+  end
+  
+  def test_refresh_data
+    @app.expects(:refresh_json_data).returns(<<-JSON)
+    {
+      "results": [{
+        "text": "Wish I could be at #JAOO Australia...",
+        "from_user": "CaioProiete",
+        "id": 1711269079
+      }],
+      "refresh_url": "?since_id=1711269079&q=jaoo"
+    }
+    JSON
+    @app.refresh
+    expected = <<-RESULTS.gsub(/^    /, '')
+    CaioProiete: Wish I could be at #JAOO Australia...
+    RESULTS
+    assert_equal(expected, @app.render_latest_results)
+    assert_equal('?since_id=1711269079&q=jaoo', @app.refresh_url)
   end
 end

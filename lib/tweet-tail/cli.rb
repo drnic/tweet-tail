@@ -1,43 +1,35 @@
 require 'optparse'
 
-module TweetTail
-  class CLI
-    def self.execute(stdout, arguments=[])
+module TweetTail::CLI
+  def self.execute(stdout, arguments=[])
+    options = { :polling => false }
+    
+    parser = OptionParser.new do |opts|
+      opts.banner = <<-BANNER.gsub(/^          /,'')
+        Display latest twitter search results. Even poll for them for hours of fun.
+        
+        Usage: #{File.basename($0)} [options]
+        
+        Options are:
+      BANNER
+      opts.separator ""
+      opts.on("-f", "Poll for new search results each 15 seconds."
+              ) { |arg| options[:polling] = true }
+      opts.on("-h", "--help",
+              "Show this help message.") { stdout.puts opts; exit }
+      opts.parse!(arguments)
+    end
 
-      # NOTE: the option -p/--path= is given as an example, and should be replaced in your application.
-
-      options = {
-        :path     => '~'
-      }
-      mandatory_options = %w(  )
-
-      parser = OptionParser.new do |opts|
-        opts.banner = <<-BANNER.gsub(/^          /,'')
-          This application is wonderful because...
-
-          Usage: #{File.basename($0)} [options]
-
-          Options are:
-        BANNER
-        opts.separator ""
-        opts.on("-p", "--path=PATH", String,
-                "This is a sample message.",
-                "For multiple lines, add more strings.",
-                "Default: ~") { |arg| options[:path] = arg }
-        opts.on("-h", "--help",
-                "Show this help message.") { stdout.puts opts; exit }
-        opts.parse!(arguments)
-
-        if mandatory_options && mandatory_options.find { |option| options[option.to_sym].nil? }
-          stdout.puts opts; exit
-        end
-      end
-
-      path = options[:path]
-      
+    begin
       app = TweetTail::TweetPoller.new(arguments.shift)
       app.refresh
       stdout.puts app.render_latest_results
+      while(options[:polling])
+        Kernel::sleep(15)
+        app.refresh
+        stdout.puts app.render_latest_results
+      end
+    rescue Interrupt
     end
   end
 end
