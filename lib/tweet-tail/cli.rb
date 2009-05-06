@@ -39,4 +39,5 @@ module TweetTail::CLI
     rescue Interrupt
     end
   end
+  
 end

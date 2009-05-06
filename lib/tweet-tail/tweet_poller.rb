@@ -4,7 +4,8 @@ class TweetTail::TweetPoller
   attr_accessor :query, :latest_results, :refresh_url
   
   def initialize(query)
-    @query   = query
+    @query       = query
+    @refresh_url = nil
   end
   
   def refresh

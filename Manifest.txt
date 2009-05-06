@@ -26,5 +26,4 @@ script/console
 script/destroy
 script/generate
 test/test_helper.rb
-test/test_tweet-tail_cli.rb
 test/test_tweet_poller.rb
