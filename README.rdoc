@@ -23,7 +23,9 @@ Get the latest search results streaming to your console:
     jdar: @tullytully RT @dgou:for the benefit of people at #railsconf keynote, here is penelope trunk on tim ferris: http://bit.ly/b81E
     yorzi: Reading: &quot;Rails 3 and the Real Secret to High Productivity: RailsConf 2009 - May 04 - 07, 2009, Las Vegas,NV&quot; ( http://tinyurl.com/czmkxn )
 
-Or let it sit there all day with the +tweet_tail -f+ option (as like +tail -f+)
+Or let it sit there all day with the -f option (like "tail -f"):
+
+    tweet_tail -f railsconf
 
 Can use aliases +tweettail+ and +tweet_tail+.
 
