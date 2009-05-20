@@ -1,3 +1,5 @@
+* colour highlighting [bcarlso]
+* dependency on json gem
 * explicit development dependencies
 
 == 1.1.0 2009-05-06
