@@ -23,7 +23,7 @@
         "created_at": "Fri, 01 May 2009 04:01:38 +0000"
     },
     {
-        "text": "@VenessaP I think they went out for noodles. #jaoo",
+        "text": "@VenessaP I think they went out for &quot;noodles&quot; &amp; drinks. #jaoo",
         "to_user_id": 102294,
         "to_user": "VenessaP",
         "from_user": "Steve_Hayes",

@@ -14,7 +14,7 @@ Feature: Live twitter search results on command line
     Then I should see
       """
       mattnhodges: Come speak with me at JAOO next week - http://jaoo.dk/
-      Steve_Hayes: @VenessaP I think they went out for noodles. #jaoo
+      Steve_Hayes: @VenessaP I think they went out for "noodles" & drinks. #jaoo
       theRMK: Come speak with Matt at JAOO next week
       drnic: reading my own abstract for JAOO presentation
       """
@@ -25,7 +25,7 @@ Feature: Live twitter search results on command line
     Then I should see
       """
       mattnhodges: Come speak with me at JAOO next week - http://jaoo.dk/
-      Steve_Hayes: @VenessaP I think they went out for noodles. #jaoo
+      Steve_Hayes: @VenessaP I think they went out for "noodles" & drinks. #jaoo
       theRMK: Come speak with Matt at JAOO next week
       drnic: reading my own abstract for JAOO presentation
       CaioProiete: Wish I could be at #JAOO Australia...
