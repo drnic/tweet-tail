@@ -1,4 +1,5 @@
 require 'net/http'
+require 'tweet-tail/ansi_tweet_formatter'
 
 class TweetTail::TweetPoller
   attr_accessor :query, :latest_results, :refresh_url
@@ -20,12 +21,16 @@ class TweetTail::TweetPoller
   
   def render_latest_results
     @latest_results.inject("") do |output, tweet|
-      screen_name = tweet['from_user']
-      message     = tweet['text']
-      output += "#{screen_name}: #{message}\n"
+      output += format(tweet)
     end
   end
 
+  def format(tweet)
+    screen_name = tweet['from_user']
+    message     = tweet['text']
+    "#{screen_name}: #{message}\n"
+  end
+  
   protected
   def initial_json_data
     Net::HTTP.get(URI.parse("http://search.twitter.com/search.json?q=#{query}"))

@@ -11,3 +11,5 @@ require "json"
 require "open-uri"
 
 require "tweet-tail/tweet_poller"
+
+require "tweet-tail/ansi_tweet_formatter"

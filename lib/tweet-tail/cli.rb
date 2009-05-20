@@ -27,6 +27,8 @@ module TweetTail::CLI
 
     begin
       app = TweetTail::TweetPoller.new(query)
+      app.extend(TweetTail::AnsiTweetFormatter) if stdout.tty?
+      
       app.refresh
       stdout.puts app.render_latest_results
       while(options[:polling])
