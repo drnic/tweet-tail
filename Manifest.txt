@@ -20,10 +20,12 @@ features/support/matchers.rb
 features/support/mocha.rb
 features/support/time_machine_helpers.rb
 lib/tweet-tail.rb
+lib/tweet-tail/ansi_tweet_formatter.rb
 lib/tweet-tail/cli.rb
 lib/tweet-tail/tweet_poller.rb
 script/console
 script/destroy
 script/generate
 test/test_helper.rb
+test/test_tweet_formatter.rb
 test/test_tweet_poller.rb
